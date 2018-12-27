@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POST</title>
+
+</head>
+<body>
+
+<form action="a20181224_post.php" name="form1" method="post" onsubmit="return checkForm()">
+    <input type="text" name="a"><br>
+    <input type="text" name="b"><br>
+    <input type="submit">
+    
+</form>
+
+<script>
+    function checkForm(){
+
+        if(document.form1.a.value.length < 6){
+            alert('a 欄請填六個字以上');
+            return false;
+        }
+        if(document.form1.b.value.length < 6){
+            alert('b 欄請填六個字以上');
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+</body>
+</html>
