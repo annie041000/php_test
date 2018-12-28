@@ -15,10 +15,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item <?= $page_name == 'data_list' ? 'active' : '' ?>">
-                <a class="nav-link" href="data_list.php">列表 <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="data_list.php">列表</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+            <li class="nav-item <?= $page_name == 'data_add' ? 'active' : '' ?>">
+                <a class="nav-link" href="data_add.php">新增</a>
             </li>
         </ul>
     </div>
